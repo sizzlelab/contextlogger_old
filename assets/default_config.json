@@ -1,0 +1,29 @@
+{       
+    "name": "WifiScanner",
+    "version":2,
+    "configUpdateUrl":"http:\/\/jimu.cs.hut.fi:8080\/SQLiteDBFileReceiver\/receiver",
+    "configUpdatePeriod":7200,
+    "dataArchivePeriod":1800,
+    "dataUploadUrl":"http:\/\/jimu.cs.hut.fi:8080\/SQLiteDBFileReceiver\/receiver",
+    "dataUploadPeriod":4800,
+    "dataRequests":{
+        "edu.mit.media.funf.probe.builtin.LocationProbe": [
+		{ "PERIOD": 1800, "DURATION": 30 }
+        ],
+        "edu.mit.media.funf.probe.builtin.WifiProbe": [
+		{ "PERIOD": 1800 }
+        ],
+        "edu.mit.media.funf.probe.builtin.CellProbe": [
+        	{ "PERIOD": 1800 }
+        ],
+        "edu.mit.media.funf.probe.builtin.OrientationSensorProbe": [
+		{ "PERIOD": 1800 }
+        ],
+        "edu.mit.media.funf.probe.builtin.AccelerometerSensorProbe": [
+		{ "PERIOD": 1800, "DURATION": 30 }
+        ],
+	"org.contextlogger.android.ApplicationProbe": [
+		{}
+        ]
+    }
+}
